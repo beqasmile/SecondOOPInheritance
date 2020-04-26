@@ -22,5 +22,10 @@ namespace OOPSecond
         {
             this.numberOfComicHeroes = numberOfComicHeroes;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + " " + this.numberOfComicHeroes;
+        }
     }
 }

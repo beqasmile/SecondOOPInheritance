@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPSecond
 {
-    public class Movie
+    public class Movie :Object
     {
         protected int movieID;
         protected string movieName;

@@ -23,7 +23,7 @@ namespace OOPSecond
 
         public override string ToString()
         {
-            return this.directorName + " " + this.CountryBorn + " " + this.YearBorn;
+            return base.ToString() +this.directorName + " " + this.CountryBorn + " " + this.YearBorn;
         }
     }
 }

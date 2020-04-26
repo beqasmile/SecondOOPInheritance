@@ -29,7 +29,14 @@ namespace OOPSecond
 
         public override void CalculateTypeOfTheMovie()
         {
+            base.CalculateTypeOfTheMovie();
             Console.WriteLine("CalculateTypeOfTheMovie was deleted!!!");
+        }
+
+        public override string ToString()
+        {
+
+            return base.ToString() + this.dramaticHeroName;
         }
     }
 }

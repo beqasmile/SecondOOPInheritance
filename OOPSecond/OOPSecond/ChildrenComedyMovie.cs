@@ -14,5 +14,9 @@ namespace OOPSecond
         {
             this.childrenMinimumAge = childrenMinimumAge;
         }
+        public override string ToString()
+        {
+            return base.ToString() + " " + this.childrenMinimumAge;
+        }
     }
 }

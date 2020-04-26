@@ -8,20 +8,27 @@ namespace OOPSecond
 {
     public class DocumentalLongMovie : Movie
     {
-        private String authorName;
+        private string authorName;
+
+        public DocumentalLongMovie(int movieID, string movie) : base(movieID, movie)
+        {
+            this.authorName = "abc";
+            
+        }
 
         public string AuthorName { get => authorName; set => authorName = value; }
 
-        public DocumentalLongMovie(int movieID, string movie, int movieLength, string movieType, MovieDirector movieDirector, string dramaticHeroName)
-
-        {
-
-        }
-
+       
         public void PrintDocumentalLongMovie()
         {
             Console.WriteLine(this.authorName);
             Console.WriteLine(this.movieName);
         }
+
+
+        public override string ToString()
+        {
+            return base.ToString() + " " + this.authorName;
+        } 
     }
 }

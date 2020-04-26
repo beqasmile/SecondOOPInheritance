@@ -15,5 +15,10 @@ namespace OOPSecond
         }
 
         public int MovieLengthInFrames { get => movieLengthInFrames; set => movieLengthInFrames = value; }
+
+        public override string ToString()
+        {
+            return base.ToString() + this.movieLengthInFrames;
+        }
     }
 }
