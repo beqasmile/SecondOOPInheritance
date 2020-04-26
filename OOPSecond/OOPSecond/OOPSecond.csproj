@@ -46,7 +46,9 @@
     <Compile Include="ActionMovie.cs" />
     <Compile Include="ChildrenComedyMovie.cs" />
     <Compile Include="ComedyMovie.cs" />
+    <Compile Include="DocumentalLongMovie.cs" />
     <Compile Include="DocumentalMovie.cs" />
+    <Compile Include="DocumentalShortMovie.cs" />
     <Compile Include="DramaMovie.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="MovieActor.cs" />

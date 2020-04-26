@@ -4,21 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstOOPInheritance
+namespace OOPSecond
 {
     public class Movie
     {
-        private int movieID;
-        private string movieName;
-        private int movieLength;
-        private int movieTicketPrice;
-        private int movieAmoutOfTickets;
-        private string movieType;
+        protected int movieID;
+        protected string movieName;
+        protected int movieLength;
+        protected int movieTicketPrice;
+        protected int movieAmoutOfTickets;
+        protected string movieType;
         //private string movieDirector;
-        private FirstOOPInheritance.MovieDirector movieDirector;
-        private List<MovieActor> movieActorsList;
+        protected OOPSecond.MovieDirector movieDirector;
+        protected List<MovieActor> movieActorsList;
 
-
+        public void PrintMovie()
+        {
+            Console.WriteLine("Movie name " + this.movieName);
+            Console.WriteLine("Movie length " + this.movieLength);
+            Console.WriteLine("Movie price " + this.movieTicketPrice);
+            Console.WriteLine("Movie amount of the tickets " + this.movieAmoutOfTickets);
+        }
        
         private int GetmovieTicketPrict()
         {
@@ -46,11 +52,11 @@ namespace FirstOOPInheritance
         }
 
 
-        public Movie()
-        {
-            this.movieID = 1;
-            this.movieActorsList = new List<MovieActor>();
-        }
+        //public Movie()
+        //{
+        //    this.movieID = 1;
+        //    this.movieActorsList = new List<MovieActor>();
+        //}
         public Movie(int movieID)
         {
             this.movieID = movieID;
@@ -81,7 +87,7 @@ namespace FirstOOPInheritance
 
 
 
-        private void CalculateTypeOfTheMovie()
+        public virtual void CalculateTypeOfTheMovie()
         {
             if (this.movieLength > 200)
             {
